@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Home</title>
 <style>
-	
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
 :root{
 	--bgColor: #121212;
-	--pPurple: #200670;
+	--pPurple: #6600CC;
 	--sBlue: #67bbe1;
 }
 body {
-	background-color: var(--bgColor);
 	background-image: url("images/17d.png");
 }
-
-h1 {
-  color: maroon;
-  margin-left: 40px;
-} 
+h2 {
+	color: var(--pPurple);
+	font-family: 'Quicksand', sans-serif;
+}
+.sidebox {
+	top:0;
+	left: 0;
+    background-color: rgba(0,0,0,.7);\
+	padding: 45px 40px;
+	overflow-y: auto;
+	position: absolute;
+	width: 25%;
+	height: 100%;
+}
 nav {
-    background-color: #212121;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .navlist {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
     overflow: hidden;
 }
 .navlistitem {
-	float:left;
+	text-align: left;
+	float: center;
 }
 .navlistitem a {
     text-decoration: none;
     display: block;
-    padding-top: 14px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 16;
+    padding-bottom: 16px;
     color: white;
 }
 .navlistitem a:hover {
     color: var(--sBlue);
 }
+.headshot {
+	margin-top: 50px;
+	border-radius: 100px;
+	height: 170px;
+	width: 170px;
+}
 </style>
 </head>
 <body>
 
+<div class ="sidebox">
+<center><img class ="headshot" src="images/2_2_by_matryoshka_ruth_df1prsb.png">
+<h2>Nancy Su</h2></center>
 <nav>
 <ul class="navlist">
 	<li class="navlistitem"><a href="index.html">Home</a></li> 
 	<li class="navlistitem"><a href="about.html">About</a></li> 
-	<li class="navlistitem"><a href="contact.html">Contact</a></li>
+	<li class="navlistitem"><a href="projects.html">Contact</a></li>
 	
 	</ul>
 	
 	</nav>
-
+</div>
 </body>
 </html>
