@@ -13,25 +13,47 @@
 }
 :root{
 	--bgColor: #121212;
-	--pPurple: #6600CC;
+	--pPurple: #5F2EA2;
 	--sBlue: #67bbe1;
 }
 body {
 	background-image: url("images/17d.png");
-}
-h2 {
-	color: var(--pPurple);
 	font-family: 'Quicksand', sans-serif;
 }
+h1 {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+}
+h2{
+	color: var(--pPurple);
+	font-size: 50px;
+}
+
 .sidebox {
 	top:0;
 	left: 0;
-    background-color: rgba(0,0,0,.7);\
+	bottom: 0;
+	right: 75%;
+    background-color: var(--pPurple);
 	padding: 45px 40px;
 	overflow-y: auto;
 	position: absolute;
-	width: 25%;
-	height: 100%;
+	width: auto;
+	height: auto;
+}
+.main-section {
+	display: block;
+	color: white;
+	top:0;
+	left: 25%;
+	bottom: 0;
+	right:0;
+    background-color: rgba(0,0,0,.7);\
+	overflow-y: auto;
+	position: absolute;
+	padding: 50px;
+	width: auto;
+	height: auto;
 }
 nav {
 	padding-top: 30px;
@@ -62,22 +84,32 @@ nav {
 	height: 170px;
 	width: 170px;
 }
+.icons{
+	margin-right: 10px;
+	height:30px;
+	width:30px;
+}
+.icons:
 </style>
 </head>
 <body>
 
 <div class ="sidebox">
 <center><img class ="headshot" src="images/2_2_by_matryoshka_ruth_df1prsb.png">
-<h2>Nancy Su</h2></center>
+<h1>Nancy Su</h1></center>
 <nav>
 <ul class="navlist">
 	<li class="navlistitem"><a href="index.html">Home</a></li> 
 	<li class="navlistitem"><a href="about.html">About</a></li> 
-	<li class="navlistitem"><a href="projects.html">Contact</a></li>
-	
+	<li class="navlistitem"><a href="projects.html">Projects</a></li>
 	</ul>
-	
 	</nav>
+<a href="mailto:zifen.su@outlook.com"><img class="icons" src="images/email.png"></a>
+<a href="https://www.linkedin.com/in/zifen-su/"><img class="icons" src="images/linkedin.png"></a>
+</div>
+<div class="main-section">
+<h1>Home</h1>
+<h2>Welcome to my portfolio!</h2>
 </div>
 </body>
 </html>
