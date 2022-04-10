@@ -3,3 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+	h1 {
+		color: white;
+		font-family: 'Quicksand', sans-serif;
+	}
+	h2{
+		color: var(--primColor);
+		font-size: 50px;
+	}

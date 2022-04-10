@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 <title>Home</title>
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-.transparent {
-	zoom: 1;
-	filter: alpha(opacity=50);
-	opacity: 0.5;
-}
-:root{
-	--bgColor: #121212;
-	--pPurple: #5F2EA2;
-	--sBlue: #67bbe1;
-}
-body {
-	background-image: url("images/17d.png");
-	font-family: 'Quicksand', sans-serif;
-}
-h1 {
-	color: white;
-	font-family: 'Quicksand', sans-serif;
-}
-h2{
-	color: var(--pPurple);
-	font-size: 50px;
-}
-
-.sidebox {
-	top:0;
-	left: 0;
-	bottom: 0;
-	right: 75%;
-    background-color: var(--pPurple);
-	padding: 45px 40px;
-	overflow-y: auto;
-	position: absolute;
-	width: auto;
-	height: auto;
-}
-.main-section {
-	display: block;
-	color: white;
-	top:0;
-	left: 25%;
-	bottom: 0;
-	right:0;
-    background-color: rgba(0,0,0,.7);\
-	overflow-y: auto;
-	position: absolute;
-	padding: 50px;
-	width: auto;
-	height: auto;
-}
-nav {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-.navlist {
-    list-style-type: none;
-    overflow: hidden;
-}
-.navlistitem {
-	text-align: left;
-	float: center;
-}
-.navlistitem a {
-    text-decoration: none;
-    display: block;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-    color: white;
-}
-.navlistitem a:hover {
-    color: var(--sBlue);
-}
-.headshot {
-	margin-top: 50px;
-	border-radius: 100px;
-	height: 170px;
-	width: 170px;
-}
-.icons{
-	margin-right: 10px;
-	height:30px;
-	width:30px;
-}
-.icons:hover{
-}
+	.transparent {
+		zoom: 1;
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+	}
+	:root{
+		--bgColor: #121212;
+		--primColor: #857f72;
+		--secColor: #673AB7;
+	}
+	body {
+		background-image: url("images/17d.png");
+		font-family: 'Quicksand', sans-serif;
+	}
+	.sidebox {
+		top:0;
+		left: 0;
+		bottom: 0;
+		right: 75%;
+    	background-color: var(--primColor);
+		padding: 45px 40px;
+		overflow-y: auto;
+		position: absolute;
+		width: auto;
+		height: auto;
+	}
+	.main-section {
+		display: block;
+		color: white;
+		top:0;
+		left: 25%;
+		bottom: 0;
+		right:0;
+    	background-color: rgba(0,0,0,.7);\
+		overflow-y: auto;
+		position: absolute;
+		padding: 50px;
+		width: auto;
+		height: auto;
+	}
+	nav {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.navlist {
+  	  list-style-type: none;
+  	  overflow: hidden;
+	}
+	.navlistitem {
+		text-align: left;
+		float: center;
+	}
+	.navlistitem a {
+	    text-decoration: none;
+	    display: block;
+	    padding-left: 16px;
+	    padding-right: 16px;
+	    padding-bottom: 16px;
+	    color: white;
+	}
+	.navlistitem a:hover {
+  	  color: var(--secColor);
+	}
+	.headshot {
+		margin-top: 50px;
+		border-radius: 100px;
+		height: 170px;
+		width: 170px;
+	}
+    .contacticon {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .contacticon .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .contacticon:hover .img-top {
+        display: inline;
+    }
 </style>
 </head>
 <body>
 
 <div class ="sidebox">
-<center><img class ="headshot" src="images/2_2_by_matryoshka_ruth_df1prsb.png">
+<center><img class ="headshot" src="images/2_2_by_matryoshka_ruth_df1prsb.png" alt="headshot picture">
 <h1>Nancy Su</h1></center>
 <nav>
 <ul class="navlist">
@@ -108,10 +109,17 @@ nav {
 	</nav>
 	
 Conact me!<br>
-<a href="mailto:zifen.su@outlook.com"><img class="icons" src="images/email.png"></a>
-<a href="https://www.linkedin.com/in/zifen-su/"><img class="icons" src="images/linkedin.png"></a>
-<a href="Resume.pdf">Resume</a>
-</div>
+    <a href="mailto:zifen.su@outlook.com"><div class="contacticon">
+    	<img src="images/email.png"  height="25px" width="25px" alt="Black Email Icon">
+        <img src="images/emailhover.png" class="img-top" height="25px" width="25px" alt="Purple Email Icon">
+		</div></a>
+	<a href="https://www.linkedin.com/in/zifen-su/">
+	    <div class="contacticon">
+    	<img src="images/linkedin.png"  height="25px" width="25px" alt="Black Email Icon">
+        <img src="images/linkedinhover.png" class="img-top" height="25px" width="25px" alt="Purple Email Icon">
+		</div></a>
+	
+</div> /*end of sidebar*/
 <div class="main-section">
 <h1>Hi, I'm Nancy<br>
 I'm a IT specialist based in Columbus, Ohio.</h1>
