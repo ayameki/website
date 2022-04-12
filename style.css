@@ -28,4 +28,23 @@ p {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-
+#red {
+	background-color: #FAA0A0;
+	border-color: #FF4545;
+}
+#orange {
+	background-color:#FAC898;
+	border-color: #FC9532;
+}
+#yellow {
+	background-color:#FFFAA0;
+	border-bottom-color:#FCF012;
+}
+#blue {
+	background-color: #A7C7E7;
+	border-color: #4FA5FB;
+}
+#green {
+	background-color:#C1E1C1;
+	border-color: #5EF85E;
+}
