@@ -28,23 +28,39 @@ p {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-#red {
+.skillstag {
+    height: auto;
+    width: fit-content;
+    border: 2px solid;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-right: 8px;
+	color:black;
+	font-weight: bold;
+	opacity: .8;
+	}
+.skillstag:hover{
+	opacity: 1;
+}
+.red {
 	background-color: #FAA0A0;
 	border-color: #FF4545;
 }
-#orange {
+.orange {
 	background-color:#FAC898;
 	border-color: #FC9532;
 }
-#yellow {
+.yellow {
 	background-color:#FFFAA0;
-	border-bottom-color:#FCF012;
+	border-color:#FCF012;
 }
-#blue {
+.blue {
 	background-color: #A7C7E7;
 	border-color: #4FA5FB;
 }
-#green {
+.green {
 	background-color:#C1E1C1;
 	border-color: #5EF85E;
 }
