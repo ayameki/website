@@ -1,121 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
 <title>Projects</title>
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-.transparent {
-	zoom: 1;
-	filter: alpha(opacity=50);
-	opacity: 0.5;
-}
-:root{
-	--bgColor: #121212;
-	--pPurple: #5F2EA2;
-	--sBlue: #67bbe1;
-}
-body {
-	background-image: url("images/17d.png");
-	font-family: 'Quicksand', sans-serif;
-}
-h1 {
-	color: white;
-	font-family: 'Quicksand', sans-serif;
-}
-h2 {
-	color: var(--pPurple);
-	font-size: 50px;
-}
-h3 { /*subtitle*/
-
-}
-
-.sidebox {
-	top:0;
-	left: 0;
-	bottom: 0;
-	right: 75%;
-    background-color: var(--pPurple);
-	padding: 45px 40px;
-	overflow-y: auto;
-	position: absolute;
-	width: auto;
-	height: auto;
-}
-.main-section {
-	display: block;
-	color: white;
-	top:0;
-	left: 25%;
-	bottom: 0;
-	right:0;
-    background-color: rgba(0,0,0,.7);\
-	overflow-y: auto;
-	position: absolute;
-	padding: 50px;
-	width: auto;
-	height: auto;
-}
-nav {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-.navlist {
-    list-style-type: none;
-    overflow: hidden;
-}
-.navlistitem {
-	text-align: left;
-	float: center;
-}
-.navlistitem a {
-    text-decoration: none;
-    display: block;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-    color: white;
-}
-.navlistitem a:hover {
-    color: var(--sBlue);
-}
-.timeline {
-}
-.headshot {
-	margin-top: 50px;
-	border-radius: 100px;
-	height: 170px;
-	width: 170px;
-}
-.icons{
-	margin-right: 10px;
-	height:30px;
-	width:30px;
-}
-.icons: hover{
-}
+	.transparent {
+		zoom: 1;
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+	}
+	:root{
+		--bgColor: #121212;
+		--primColor: #857f72;
+		--secColor: #673AB7;
+	}
+	body {
+		background-image: url("images/17d.png");
+		font-family: 'Quicksand', sans-serif;
+	}
+	.sidebox {
+		top:0;
+		left: 0;
+		bottom: 0;
+		right: 75%;
+    	background-color: var(--primColor);
+		padding: 45px 40px;
+		overflow-y: auto;
+		position: absolute;
+		width: auto;
+		height: auto;
+	}
+	.main-section {
+		display: block;
+		color: white;
+		top:0;
+		left: 25%;
+		bottom: 0;
+		right:0;
+    	background-color: rgba(0,0,0,.7);\
+		overflow-y: auto;
+		position: absolute;
+		padding: 50px;
+		width: auto;
+		height: auto;
+	}
+	nav {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.navlist {
+  	  list-style-type: none;
+  	  overflow: hidden;
+	}
+	.navlistitem {
+		text-align: left;
+		float: center;
+	}
+	.navlistitem a {
+	    text-decoration: none;
+	    display: block;
+	    padding-left: 16px;
+	    padding-right: 16px;
+	    padding-bottom: 16px;
+	    color: white;
+	}
+	.navlistitem a:hover {
+  	  color: var(--secColor);
+	}
+	.headshot {
+		margin-top: 50px;
+		border-radius: 100px;
+		height: 170px;
+		width: 170px;
+	}
+    .contacticon {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .contacticon .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .contacticon:hover .img-top {
+        display: inline;
+    }
+	
 </style>
 </head>
 <body>
 
 <div class ="sidebox">
-<center><img class ="headshot" src="images/2_2_by_matryoshka_ruth_df1prsb.png">
+<center><img class ="headshot" src="images/2_2_by_matryoshka_ruth_df1prsb.png" alt="headshot picture">
 <h1>Nancy Su</h1></center>
 <nav>
 <ul class="navlist">
 	<li class="navlistitem"><a href="index.html">Home</a></li> 
 	<li class="navlistitem"><a href="about.html">About</a></li> 
 	<li class="navlistitem"><a href="projects.html">Projects</a></li>
+	<li class="navlistitem"><a href="Resume.pdf" target="_blank">Resume <img src="images/foreign.png" height="10px" width="10px"></a></li>
 	</ul>
 	</nav>
-<a href="mailto:zifen.su@outlook.com"><img class="icons" src="images/email.png"></a>
-<a href="https://www.linkedin.com/in/zifen-su/"><img class="icons" src="images/linkedin.png"></a>
-</div>
+	
+Contact me!<br>
+    <a href="mailto:zifen.su@outlook.com"><div class="contacticon">
+    	<img src="images/emailhover.png"  height="25px" width="25px" alt="Email Icon">
+        <img src="images/email.png" class="img-top" height="25px" width="25px" alt="Email Icon Hover">
+		</div></a>
+	<a href="https://www.linkedin.com/in/zifen-su/">
+	    <div class="contacticon">
+    	<img src="images/linkedinhover.png"  height="25px" width="25px" alt="Email Icon">
+        <img src="images/linkedin.png" class="img-top" height="25px" width="25px" alt="Email Icon Hover">
+		</div></a>
+	
+</div> /*end of sidebar*/
 <div class="main-section">
-<h1>Projects</h1>
-Aegis Esports
+<h2>Projects</h2>
+	<h1>Tournament Organizer</h1>
+  <h3>Aegis Esports</h3>
+  <p>
+	  Aegis Esports is a North American Esports organization that was founded in May of 2021. It strives to create a path to professional esports, and bring a player first approach to its community. Apart from providing high quality amateur leagues, they also take pride in the services they provide. From their engaging community, to their high quality streams, to their extensive in-depth stat resources, Aegis Esports emphasizes quality above all.
+	  <br><br>
+	  As the tournament organizer, Nancy is the lead of the Platinum capped divison. Her responsibilities include but not limited to clarifying and enforcing the rules laid out in the rulebook, maintaining consistent leadership and order to ensure the tournament runs smoothly, recording tournament results and making those results available afterwards for participants.<br>
+	</p>
+	  <span class="skillstag red">Project Management</span><span class="skillstag blue">Esports</span><span class="skillstag green">Google Sheets</span>
+	<br><br>
+	<h1>Front end-developer</h1>
+	<h3>This website</h3>
+	<p>
+		As the front end-developer of her portfolio website, Nancy utilized CSS and HTML to create every button, box, and text presented on the website. Coding is done on Adobe Dreamweaver, website codes are on Github, and the domain belongs to me. Picture assets are either commisioned from artists or has a open or free license.
+	</p>
+	<span class="skillstag yellow">CSS</span><span class="skillstag green">HTML</span><span class="skillstag red">Adobe Dreamweaver</span><span class="skillstag blue">GitHub</span>
 </div>
 </body>
 </html>
